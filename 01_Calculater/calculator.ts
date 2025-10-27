@@ -5,7 +5,19 @@ type InvestmentData = {
     duration: number
 }
 
-function calculateInvestment(data:InvestmentData) {}
+type InvestmentResult = {
+    year: string,
+    totalAmount: number,
+    totalContribution: number,
+    totalInterestEarning: number
+}
+
+type calculateInvestmentResult = InvestmentResult [] | string;
+
+function calculateInvestment(data:InvestmentData) : calculateInvestmentResult[] {
+    
+}
+
 
 function printResult(results){
     // print (output) the result data
